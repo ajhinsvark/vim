@@ -87,6 +87,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+let g:syntastic_python_checkers =['flake8']
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General Settings
@@ -117,3 +118,12 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+
+" Change escape
+inoremap jk <esc>
+vnoremap jk <esc>
+inoremap <esc> <nop>
+
+" Easily edit vimrc
+noremap <leader>ev :vs $MYVIMRC<cr>
+noremap <leader>sv :source $MYVIMRC<cr>
