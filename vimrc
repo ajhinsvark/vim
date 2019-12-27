@@ -1,3 +1,4 @@
+set encoding=utf-8
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -22,6 +23,14 @@ Plugin 'honza/vim-snippets'
 " Syntax checker and linter
 Plugin 'vim-syntastic/syntastic'
 
+" Easily jump around 
+Plugin 'easymotion/vim-easymotion'
+
+" Git integration
+Plugin 'tpope/vim-fugitive'
+
+" Window status line
+Plugin 'vim-airline/vim-airline'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -81,6 +90,7 @@ let g:syntastic_check_on_wq = 0
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General Settings
+let mapleader = ","
 
 set backspace=indent,eol,start
 
